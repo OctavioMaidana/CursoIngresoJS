@@ -17,5 +17,5 @@ salidas
 alert
 console.log
 document.write
-
+documentgetByID
 */

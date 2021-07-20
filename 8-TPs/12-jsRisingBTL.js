@@ -11,9 +11,22 @@ function ComenzarIngreso ()
 {
  	//definicion de variables
  	var edadIngresada;
+ 	edadIngresada = 0;
  	var sexoIngresado;
  	var estadoCivilIngresado;
+ 	var edad;
+  
 
+while (edadIngresada < 18 && edadIngresada > 90) 
+    { 
+
+    edadIngresada = prompt ("ingrese su edad");
+    edadIngresada++;
+    edad = edadIngresada + edad;   
+    edadIngresada = prompt ("error la edad ingresada es incorrecta vuelva a ingresarla");                        }
 
 
 }
+
+
+alert ("El dato es correcto su edad es " + edad);

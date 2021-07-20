@@ -7,11 +7,9 @@ function mostrar()
 
 	alert("tu edad es " + edad);
 
-	if ( edad >= 18   ) { alert ("eres mayor de edad");
-	
-}
-else { alert ("eres un borrego");
-}
+	if ( edad >= 18   ) { alert ("eres mayor de edad");}
+
+else { alert ("eres un borrego"); }
 
 
 	

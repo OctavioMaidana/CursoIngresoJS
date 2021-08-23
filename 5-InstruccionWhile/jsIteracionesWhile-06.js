@@ -1,40 +1,47 @@
-function mostrar()
+/* Octavio Maidana Div H Ejercicio 6 While
+Al presionar el botón pedir 5 números e informar la suma acumulada y el promedio.
+*/
+
+
+ mostrar()
 {
 	var contador;
 	var acumulador;
 	var numeroIngresado;
-	var suma;
 	var promedio;
-	suma = parseInt(suma);
-	numeroIngresado = parseInt (numeroIngresado);
+	
 	
 
 	contador=0;
 	acumulador=0;
-	suma=0;
+
 
 	while (contador<5) {
 
 		numeroIngresado = prompt ( "Ingrese un número");
+		numeroIngresado = parseInt (numeroIngresado);
 		
-		suma += numeroIngresado;
-		acumulador= acumulador+numeroIngresado;
-		//suma= suma + numeroIngresado;
+		acumulador += numeroIngresado;
+		//acumulador= acumulador + numeroIngresado;
 		contador++; 
-       txtIdPromedio.valiu = suma/contador;
+		//contador = contador +1;
+		//contador += 1;
+      
 
 
 	}
 
 
-
+   
 	promedio = acumulador/contador;
 
-	alert ("suma" + promedio);
+	// ("la suma da " + acumulador);
+	//alert (" y promedio " + promedio);
+
 
 
 	
-	
+    txtIdPromedio.value = promedio;
 	txtIdSuma.value=acumulador;
 		
 

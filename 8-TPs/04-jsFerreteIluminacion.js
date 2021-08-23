@@ -18,13 +18,43 @@ function CalcularPrecio ()
 	var marca;
 	var precioFinal;
 	var ingresosBrutos
-
-	descuento = txtIdprecioDescuento.value;
+  lamparitas = txtIdCantidad.value;
+  lamparitas = parseInt (lamparitas);
+	//descuento = txtIdprecioDescuento.value;
 	descuento = parseFloat (descuento);
 	marca = Marca.value ; 
 
+switch (marca) {
+
+case "ArgentinaLuz":
+       switch (lamparitas) 
+       { case 6: descuento = precio * 0.5;
+                 txtIdprecioDescuento.value = descuento * lamparitas;
+                 alert ("el descuento es " +descuento);
+                 break;
+        case 5 : descuento = precio * 0.4;
+                 txtIdprecioDescuento.value = descuento * lamparitas;
+                 alert ("el descuento es " +descuento);
+                 break; 
+        case 4 : descuento = precio * 0.25;
+                 txtIdprecioDescuento.value = descuento * lamparitas;
+                 alert ("el descuento es " +descuento);
+                 break; 
+        case 3 : descuento = precio * 0.15;
+                 txtIdprecioDescuento.value = descuento * lamparitas;
+                 alert ("el descuento es " +descuento);
+                 break;                                      }
+
+break;
+
+}
 
 
+
+}
+
+
+/*
 	lamparitas = txtIdCantidad.value; 	
 	lamparitas = parseFloat (lamparitas);
 
@@ -32,7 +62,8 @@ function CalcularPrecio ()
 
 		descuento = precio * lamparitas  /2;
 
-		alert("el precio es " + descuento); }
+		alert("el precio es " + descuento);
+    txtIdprecioDescuento.value = descuento; }
 
 		else {
 
@@ -40,10 +71,26 @@ function CalcularPrecio ()
 			if (lamparitas ==5 && marca == "ArgentinaLuz" ) {
 				descuento = precio * (lamparitas*40/100);
 
-				alert ("el precio es" + descuento);  }
+				alert ("el precio es" + descuento);
+        txtIdprecioDescuento.value = descuento;  }
 
 				else {  descuento = precio * (lamparitas*30/100);
-			           alert ("el precio es " + descuento);  }
+			            ("el precio es " + descuento);
+                 txtIdprecioDescuento.value = descuento; 
+
+
+                
+
+
+               }
+
+                if (lamparitas == 4 && marca == "ArgentinaLuz" || marca == "FelipeLamparas" ) 
+                          { descuento = precio * (lamparitas*25/100); 
+                            txtIdprecioDescuento.value =  descuento;   }
+                            else { descuento = precio * (lamparitas*20/100); 
+                                     txtIdprecioDescuento.value = precio - descuento;}
+
+
 
 		
 
